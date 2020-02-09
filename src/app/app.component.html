@@ -1,11 +1,3 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <style>
   :host {
@@ -22,7 +14,7 @@
     display: flex;
     margin: 16px auto;
     padding: 0 16px;
-    max-width: 960px;
+    max-width: 720px;
     flex-direction: column;
     align-items: center;
   }
@@ -78,7 +70,7 @@
 
   .card-container .card:not(.highlight-card):hover {
     transform: translateY(-3px);
-    box-shadow: 0 4px 17px rgba(black, 0.35);
+    box-shadow: 0 4px 17px ;
   }
 
   .card-container .card:not(.highlight-card):hover .material-icons path {
@@ -131,59 +123,42 @@
 <div class="content" role="main">
 
   <input type="hidden" #selection>
-  <div>
-    <input type="button" style="cursor:pointer" value="Filter coffee" ng-click="sa"/>
-  </div>
- <h4 style="color:#0cbfe8">NİCE TİME NİCE COFFEE CREATE BY BRBAYRAM</h4>
+
+ <h4 style="color:#0cbfe8">Biraz huzu istiyorsan otur, bir kahve iç @CoffeeBarış</h4>
 
   <div class="card-container">
-    <div class="card card-small" (click)="selection.value = 'SmallFilter'" tabindex="0">
+    <div class="card card-small" (click)="selection.value = 'SmallCoffee'" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
 
-      <span>Küçük Filtre Kahve</span>
+      <span>Small Coffee</span>
     </div>
 
-    <div class="card card-small" (click)="selection.value = 'SmallMilkFilter'" tabindex="0">
+    <div class="card card-small" (click)="selection.value = 'SmallCappuccino'" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
 
-      <span>Küçük Sütlü Filtre Kahve</span>
+      <span>Small Cappuccino</span>
     </div>
 
-    <div class="card card-small" (click)="selection.value = 'SmallAmericano'" tabindex="0">
+    <div class="card card-small" (click)="selection.value = 'SmallMocha'" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
 
-      <span>Küçük Americano</span>
+      <span>Small Mocha</span>
     </div>
 
-    <div class="card card-small" (click)="selection.value = 'SmallMilkAmericano'" tabindex="0">
+    <div class="card card-small" (click)="selection.value = 'TallCoffee'" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
 
-      <span>Küçük Sütlü Americano</span>
+      <span>Tall Coffee</span>
     </div>
 
-    <div class="card card-small" (click)="selection.value = 'BigFilter'" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-
-      <span>Büyük Filtre Kahve</span>
-    </div>
-
-  <div class="card card-small" (click)="selection.value='BigMilkFilter'"tabindex="0">
+  <div class="card card-small" (click)="selection.value='TallCappuccino'"tabindex="0">
   <svg  class="material-icons" xmlns="http://www.w3.org/2000/svg"width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-  <span>Büyük Sütlü Filtre Kahve</span>
+  <span>Tall Cappuccino</span>
   </div>
 
-  <div class="card card-small" (click)="selection.value='BigAmericano'"tabindex="0">
+  <div class="card card-small" (click)="selection.value='TallMocha'"tabindex="0">
   <svg  class="material-icons" xmlns="http://www.w3.org/2000/svg"width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-   <span>Büyük Americano</span>
-  </div>
-
-
-    <div class="card card-small" (click)="selection.value = 'BigMilkAmericano'" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-
-      <span>Büyük Sütlü Americano</span>
-    </div>
-  </div>
+   <span>Tall Mocha</span>
   </div>
 
   <router-outlet> </router-outlet>
